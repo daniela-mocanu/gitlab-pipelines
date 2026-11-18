@@ -29,3 +29,15 @@ Source: Ultimate AWS Certified AI Practitioner AIF-C01 course slide.
 - **WaveNet** – model to generate raw audio waveform, used in speech synthesis.
 - **GAN (Generative Adversarial Network)** – models used to generate synthetic data such as images, videos, or sounds that resemble the training data. Helpful for data augmentation.
 - **XGBoost (Extreme Gradient Boosting)** – an implementation of gradient boosting.
+
+## 61. Reinforcement Learning
+
+### Applications of Reinforcement Learning
+
+Source: “Applications of Reinforcement Learning” course slide.
+
+- **Gaming** – teaching AI to play complex games (e.g., Chess, Go).
+- **Robotics** – navigating and manipulating objects in dynamic environments.
+- **Finance** – portfolio management and trading strategies.
+- **Healthcare** – optimizing treatment plans.
+- **Autonomous Vehicles** – path planning and decision-making.
