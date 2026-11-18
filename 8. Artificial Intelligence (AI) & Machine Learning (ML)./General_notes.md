@@ -139,3 +139,21 @@ The diagonal entries are correct predictions; the other entries are misclassific
 | **Recall** | When false negatives are costly. |
 | **F1 Score** | When you want a balance between precision and recall, especially with imbalanced datasets. |
 | **Accuracy** | Best suited to balanced datasets. |
+
+### Regression Metrics
+
+Source: “Model Evaluation – Regression Metrics” course slide.
+
+**MAE, MAPE, RMSE, and R²** evaluate regression models, which predict a **continuous value**. Example: predicting students’ test scores based on how many hours they study.
+
+| Metric | Full name | What it measures |
+| --- | --- | --- |
+| **MAE** | Mean Absolute Error | The average absolute difference between predicted and actual values. |
+| **MAPE** | Mean Absolute Percentage Error | The average absolute prediction error expressed as a percentage of actual values. It is undefined when an actual value is zero. |
+| **RMSE** | Root Mean Squared Error | The square root of the average squared prediction error, expressed in the same units as the target. Larger errors receive more weight. |
+| **R²** | R Squared (coefficient of determination) | The proportion of variance explained by the model relative to predicting the mean. |
+
+**MAE, MAPE, and RMSE measure prediction error:** lower values indicate less error.
+
+- **RMSE example:** If RMSE is 5, the model’s errors have a root mean square magnitude of 5 test-score points. This gives a sense of the typical error size; it is not the same as an average absolute error of 5 points.
+- **R² example:** If R² is 0.8, the model using study hours explains 80% of the observed variation in test scores, leaving 20% unexplained. This does not establish that study hours caused that variation or identify the causes of the unexplained portion.
