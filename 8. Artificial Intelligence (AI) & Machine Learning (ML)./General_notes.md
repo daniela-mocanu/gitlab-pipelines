@@ -240,3 +240,24 @@ flowchart TD
 - Continuously improve and refine the model as new data becomes available.
 - Account for changing requirements.
 - Iterate to keep the model accurate and relevant over time.
+
+## 67. Hyperparameters
+
+Source: “Hyperparameter Tuning” course slide.
+
+### What Is a Hyperparameter?
+
+- A setting that defines the model structure, learning algorithm, or training process.
+- Set before training begins.
+- Examples: **learning rate**, **batch size**, **number of epochs**, and **regularization**.
+
+### Hyperparameter Tuning
+
+- Finding the best hyperparameter values to optimize model performance.
+- Can improve model accuracy, reduce overfitting, and enhance generalization.
+
+### Tuning Methods and Services
+
+- **Grid search**
+- **Random search**
+- Services such as **Amazon SageMaker Automatic Model Tuning (AMT)**.
