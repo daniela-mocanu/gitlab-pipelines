@@ -157,3 +157,22 @@ Source: “Model Evaluation – Regression Metrics” course slide.
 
 - **RMSE example:** If RMSE is 5, the model’s errors have a root mean square magnitude of 5 test-score points. This gives a sense of the typical error size; it is not the same as an average absolute error of 5 points.
 - **R² example:** If R² is 0.8, the model using study hours explains 80% of the observed variation in test scores, leaving 20% unexplained. This does not establish that study hours caused that variation or identify the causes of the unexplained portion.
+
+## 65. Machine Learning Inferencing
+
+### Inferencing at the Edge
+
+Source: “Inferencing at the Edge” course slide by Stephane Maarek.
+
+**Edge devices** are located close to where data is generated. They usually have less computing power and may operate in places with limited internet connectivity. The slide uses a **Raspberry Pi** as an example.
+
+### Local SLM vs. Remote LLM
+
+| Aspect | Small Language Model (SLM) on the edge device | Large Language Model (LLM) on a remote server |
+| --- | --- | --- |
+| **Model and compute** | Low compute footprint, suitable for a device with limited resources. | More powerful model hosted on a remote server. |
+| **Latency** | Very low latency from local inference. | Higher latency, including communication with the server. |
+| **Connectivity** | Can perform inference offline. | Requires an online connection to access the server. |
+| **Example in the diagram** | A Raspberry Pi runs the SLM directly. | A Raspberry Pi sends API calls over the internet to a server hosting the LLM and receives responses. |
+
+**Key trade-off:** Local inference supports low latency and offline operation with a small compute footprint. Remote inference provides access to a more powerful model but requires connectivity and introduces higher latency.
