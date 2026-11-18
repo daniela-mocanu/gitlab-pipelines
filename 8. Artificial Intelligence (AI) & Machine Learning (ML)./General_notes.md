@@ -181,6 +181,32 @@ Source: “Inferencing at the Edge” course slide by Stephane Maarek.
 
 Source: “Phases of Machine Learning Project” course slide.
 
+### Project Workflow
+
+The diagram shows the following sequence:
+
+1. **Business Problem**
+2. **ML Problem Framing**
+3. **Data Collection & Preparation**
+4. **Feature Engineering**
+5. **Model Training & Parameter Tuning**
+6. **Model Evaluation**
+7. **Decision: Are business goals met?**
+
+If **No**, the workflow loops back to data collection and preparation through **data augmentation**, or to feature engineering through **feature augmentation**, then repeats training and evaluation. A **Yes** branch is labeled, but its destination is outside the visible image.
+
+```mermaid
+flowchart TD
+    A[Business Problem] --> B[ML Problem Framing]
+    B --> C[Data Collection & Preparation]
+    C --> D[Feature Engineering]
+    D --> E[Model Training & Parameter Tuning]
+    E --> F[Model Evaluation]
+    F --> G{Are business goals met?}
+    G -->|No: Data Augmentation| C
+    G -->|No: Feature Augmentation| D
+```
+
 ### Retrain
 
 - Review data and features to improve the model.
