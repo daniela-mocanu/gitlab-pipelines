@@ -112,3 +112,30 @@ flowchart LR
     RM --> Reward
     Reward -->|Update using PPO| Policy
 ```
+
+## 64. Model Evaluation Metrics
+
+### Confusion Matrix
+
+Source: “Confusion Matrix - continued” course slide by Stephane Maarek.
+
+A confusion matrix evaluates the performance of a classification model by comparing actual classes with predicted classes. It can cover multiple classes, as in the three-class sentiment example below.
+
+Rows represent **actual** classes; columns represent **predicted** classes.
+
+| Actual / Predicted | Negative | Neutral | Positive |
+| --- | --- | --- | --- |
+| **Negative** | 700 | 300 | 0 |
+| **Neutral** | 200 | 8300 | 100 |
+| **Positive** | 0 | 100 | 300 |
+
+The diagonal entries are correct predictions; the other entries are misclassifications. This dataset is imbalanced: it contains 1,000 actual negative examples, 8,600 neutral examples, and 400 positive examples.
+
+### Choosing an Evaluation Metric
+
+| Metric | When to use it |
+| --- | --- |
+| **Precision** | When false positives are costly. |
+| **Recall** | When false negatives are costly. |
+| **F1 Score** | When you want a balance between precision and recall, especially with imbalanced datasets. |
+| **Accuracy** | Best suited to balanced datasets. |
