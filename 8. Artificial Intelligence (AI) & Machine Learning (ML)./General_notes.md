@@ -192,8 +192,13 @@ The diagram shows the following sequence:
 5. **Model Training & Parameter Tuning**
 6. **Model Evaluation**
 7. **Decision: Are business goals met?**
+8. If **Yes**: **Model Testing & Deployment**
+9. **Predictions**
+10. **Monitoring & Debugging**
 
-If **No**, the workflow loops back to data collection and preparation through **data augmentation**, or to feature engineering through **feature augmentation**, then repeats training and evaluation. A **Yes** branch is labeled, but its destination is outside the visible image.
+If business goals are **not met**, the workflow loops back to data collection and preparation through **data augmentation**, or to feature engineering through **feature augmentation**, then repeats training and evaluation.
+
+If business goals **are met**, the model proceeds to testing and deployment, produces predictions, and enters monitoring and debugging. The **“Add new data and retrain”** feedback path returns from monitoring to data collection and preparation, with branches into feature engineering and model training and parameter tuning.
 
 ```mermaid
 flowchart TD
@@ -205,6 +210,13 @@ flowchart TD
     F --> G{Are business goals met?}
     G -->|No: Data Augmentation| C
     G -->|No: Feature Augmentation| D
+    G -->|Yes| H[Model Testing & Deployment]
+    H --> I[Predictions]
+    I --> J[Monitoring & Debugging]
+    J --> K[Add new data and retrain]
+    K --> C
+    K --> D
+    K --> E
 ```
 
 ### Retrain
