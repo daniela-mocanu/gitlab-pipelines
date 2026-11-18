@@ -89,3 +89,26 @@ The slide describes four stages using an internal company knowledge chatbot as a
 
 - Use the reward model as a reward function for Reinforcement Learning.
 - This optimization stage can be fully automated.
+
+### RLHF Process Diagram
+
+Source: “RLHF Process” course slide, referencing [AWS: What is RLHF?](https://aws.amazon.com/what-is/reinforcement-learning-from-human-feedback/).
+
+The diagram groups the process into three training steps, with demonstration data collection included in the first step.
+
+| Step | Data and training | Result |
+| --- | --- | --- |
+| **1. Supervised Fine-Tuning (SFT)** | Collect human demonstration data and use it to fine-tune a base large language model (LLM). | A supervised fine-tuned model (SFT). |
+| **2. Training a Reward Model (RM)** | Give the SFT model a prompt to generate candidate answers. Humans rank the answers (for example, Answer 1 > Answer 2). Use this human preference data to train a reward model from a base LLM. | A reward model that scores responses according to learned human preferences. |
+| **3. Optimize Policy** | The policy generates an answer to a prompt. The reward model evaluates the answer and returns a reward, which is used to update the policy. The diagram labels this optimization method **PPO (Proximal Policy Optimization)**. | An updated policy, meaning the language model being optimized. |
+
+The final step forms a feedback loop:
+
+```mermaid
+flowchart LR
+    Prompt --> Policy
+    Policy --> Answer
+    Answer --> RM[Reward Model]
+    RM --> Reward
+    Reward -->|Update using PPO| Policy
+```
