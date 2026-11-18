@@ -32,6 +32,25 @@ Source: Ultimate AWS Certified AI Practitioner AIF-C01 course slide.
 
 ## 61. Reinforcement Learning
 
+### What Is Reinforcement Learning (RL)?
+
+Source: “What is Reinforcement Learning (RL)?” course slide.
+
+Reinforcement Learning is a type of Machine Learning where an agent learns to make decisions by performing actions in an environment to maximize cumulative rewards.
+
+### Key Concepts
+
+| Concept | Meaning |
+| --- | --- |
+| **Agent** | The learner or decision-maker. |
+| **Environment** | The external system the agent interacts with. |
+| **Action** | The choices made by the agent. |
+| **Reward** | The feedback from the environment based on the agent’s actions. |
+
+### Grid Example
+
+The diagram shows a robot starting at the bottom-left of a grid and an exit at the top-right. Ordinary cells are marked **−1**, cells along the orange obstacles are marked **−10**, and the exit is marked **+100**. These rewards illustrate how the agent can learn to reach the exit while minimizing penalties and maximizing cumulative reward.
+
 ### Applications of Reinforcement Learning
 
 Source: “Applications of Reinforcement Learning” course slide.
