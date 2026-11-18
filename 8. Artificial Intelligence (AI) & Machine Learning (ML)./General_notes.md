@@ -261,3 +261,30 @@ Source: “Hyperparameter Tuning” course slide.
 - **Grid search**
 - **Random search**
 - Services such as **Amazon SageMaker Automatic Model Tuning (AMT)**.
+
+### Important Hyperparameters
+
+Source: “Important Hyperparameters” course slide. The batch-size explanation below clarifies the slide’s stability claim.
+
+#### Learning Rate
+
+- Controls how large or small the steps are when updating the model’s weights during training.
+- A high learning rate can lead to faster convergence but risks overshooting the optimal solution.
+- A low learning rate can allow finer updates but may result in slower convergence.
+
+#### Batch Size
+
+- The number of training examples used to update the model’s weights in one iteration.
+- Smaller batches use less memory and produce more frequent, generally noisier gradient updates; they can help generalization.
+- Larger batches generally produce smoother gradient estimates and can improve hardware throughput, but require more memory.
+- Training speed and stability depend on hardware, the optimizer, and the learning rate. The slide’s claim that smaller batches are more stable and larger batches less stable is not a general rule.
+
+#### Number of Epochs
+
+- The number of times the model iterates over the entire training dataset.
+- Too few epochs can lead to underfitting; too many may cause overfitting.
+
+#### Regularization
+
+- Controls the balance between model fit and complexity.
+- Increasing regularization can reduce overfitting; excessive regularization can lead to underfitting.
