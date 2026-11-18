@@ -343,3 +343,22 @@ probability_of_target = target_color_cards / total_cards
 print("The probability of drawing a blue card is:", probability_of_target)
 # Output: The probability of drawing a blue card is: 0.3
 ```
+
+## Chapter 8 — Test Examples
+
+### Question 2: Generating Synthetic Images
+
+Source: Chapter 8 quiz screenshot.
+
+A data science team has a training dataset in which one category of images is underrepresented. It wants to generate realistic synthetic images that resemble the training data to balance the dataset. Which type of model should it use?
+
+**Options:**
+
+- ResNet (Residual Network)
+- WaveNet
+- XGBoost (Extreme Gradient Boosting)
+- GAN (Generative Adversarial Network)
+
+**Correct answer: GAN (Generative Adversarial Network).**
+
+A GAN generates synthetic images, videos, or sounds that resemble the training data, making it useful for **data augmentation**. In this example, it can generate additional images for the underrepresented category to help balance the dataset.
