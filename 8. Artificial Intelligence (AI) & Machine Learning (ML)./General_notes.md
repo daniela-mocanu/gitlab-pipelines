@@ -308,3 +308,38 @@ Source: “What to do if overfitting?” course slide.
 - **Apply data augmentation** to increase diversity in the training dataset.
 - **Adjust hyperparameters**, such as regularization strength, model complexity, and the number of epochs. The aim is to tune their values rather than simply “add” hyperparameters.
 - **Use ensembling** to combine multiple models; this can improve generalization and reduce overfitting, depending on the models and ensemble method.
+
+## 68. When Is Machine Learning Not Appropriate?
+
+Source: “When is Machine Learning NOT appropriate?” course slide.
+
+### Prefer Direct Computation for Well-Defined Problems
+
+- When a problem has a known formula or explicit rules that compute the required answer directly, purpose-built computer code is usually preferable to training an ML model.
+- Supervised, unsupervised, or reinforcement learning may provide an approximation where an exact calculation is already available.
+- LLM reasoning can make mistakes. For this type of calculation, use the known formula or execute code to obtain a reliable result.
+
+### Example: Drawing a Blue Card
+
+A deck contains **five red cards**, **three blue cards**, and **two yellow cards**. Assuming every card is equally likely to be drawn:
+
+**P(blue) = blue cards / total cards = 3 / (5 + 3 + 2) = 3/10 = 0.3 = 30%.**
+
+The draw is random, but calculating its probability from the known card counts is deterministic and does not require ML.
+
+```python
+# Define the number of each card type.
+red_cards = 5
+blue_cards = 3
+yellow_cards = 2
+
+# Calculate the total number of cards.
+total_cards = red_cards + blue_cards + yellow_cards
+
+# Select the target color and calculate its probability.
+target_color_cards = blue_cards
+probability_of_target = target_color_cards / total_cards
+
+print("The probability of drawing a blue card is:", probability_of_target)
+# Output: The probability of drawing a blue card is: 0.3
+```
