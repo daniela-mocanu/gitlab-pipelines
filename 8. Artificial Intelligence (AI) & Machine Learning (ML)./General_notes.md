@@ -176,3 +176,29 @@ Source: “Inferencing at the Edge” course slide by Stephane Maarek.
 | **Example in the diagram** | A Raspberry Pi runs the SLM directly. | A Raspberry Pi sends API calls over the internet to a server hosting the LLM and receives responses. |
 
 **Key trade-off:** Local inference supports low latency and offline operation with a small compute footprint. Remote inference provides access to a more powerful model but requires connectivity and introduces higher latency.
+
+## 66. ML Phases
+
+Source: “Phases of Machine Learning Project” course slide.
+
+### Retrain
+
+- Review data and features to improve the model.
+- Adjust the model training hyperparameters.
+
+### Deployment
+
+- If results are good, deploy the model so it is ready to make inferences.
+- Select a deployment approach: real-time, serverless, asynchronous, batch, on-premises, etc.
+
+### Monitoring
+
+- Deploy a system to check that the model maintains the desired level of performance.
+- Detect issues early and mitigate them.
+- Debug issues and understand the model’s behavior.
+
+### Iterations
+
+- Continuously improve and refine the model as new data becomes available.
+- Account for changing requirements.
+- Iterate to keep the model accurate and relevant over time.
