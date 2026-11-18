@@ -1,4 +1,6 @@
-# ML Terms You May Encounter in the Exam
+# Artificial Intelligence (AI) & Machine Learning (ML) — General Notes
+
+## ML Terms You May Encounter in the Exam
 
 Source: Ultimate AWS Certified AI Practitioner AIF-C01 course slide.
 
