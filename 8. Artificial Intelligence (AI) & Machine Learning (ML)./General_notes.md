@@ -288,3 +288,23 @@ Source: “Important Hyperparameters” course slide. The batch-size explanation
 
 - Controls the balance between model fit and complexity.
 - Increasing regularization can reduce overfitting; excessive regularization can lead to underfitting.
+
+### What to Do If Overfitting?
+
+Source: “What to do if overfitting?” course slide.
+
+**Overfitting** occurs when a model makes good predictions on training data but performs poorly on new, unseen data.
+
+#### Causes
+
+- The training dataset is too small or does not adequately represent the range of inputs the model will encounter.
+- The model trains too long on the same dataset.
+- Model complexity is too high, causing the model to learn noise in the training data.
+
+#### Prevention Methods
+
+- **Increase training data size** with representative examples.
+- **Use early stopping** to stop training when validation performance stops improving.
+- **Apply data augmentation** to increase diversity in the training dataset.
+- **Adjust hyperparameters**, such as regularization strength, model complexity, and the number of epochs. The aim is to tune their values rather than simply “add” hyperparameters.
+- **Use ensembling** to combine multiple models; this can improve generalization and reduce overfitting, depending on the models and ensemble method.
