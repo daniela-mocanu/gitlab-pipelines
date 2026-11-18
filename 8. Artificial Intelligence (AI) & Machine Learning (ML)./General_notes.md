@@ -60,3 +60,32 @@ Source: “Applications of Reinforcement Learning” course slide.
 - **Finance** – portfolio management and trading strategies.
 - **Healthcare** – optimizing treatment plans.
 - **Autonomous Vehicles** – path planning and decision-making.
+
+## 62. Reinforcement Learning from Human Feedback (RLHF)
+
+### How Does RLHF Work?
+
+Source: “How does RLHF work? Example: internal company knowledge chatbot” course slide.
+
+The slide describes four stages using an internal company knowledge chatbot as an example.
+
+### 1. Data Collection
+
+- Create a set of human-generated prompts and responses.
+- Example prompt: “Where is the location of the HR department in Boston?”
+
+### 2. Supervised Fine-Tuning of a Language Model
+
+- Fine-tune an existing model with internal knowledge.
+- The model creates responses for the human-generated prompts.
+- Responses are mathematically compared to human-generated answers.
+
+### 3. Build a Separate Reward Model
+
+- Humans indicate which response they prefer for the same prompt.
+- The reward model learns to estimate human preferences for responses to a prompt.
+
+### 4. Optimize the Language Model Using the Reward Model
+
+- Use the reward model as a reward function for Reinforcement Learning.
+- This optimization stage can be fully automated.
