@@ -1,5 +1,22 @@
 # Artificial Intelligence (AI) & Machine Learning (ML) — General Notes
 
+## 55. AI, ML, Deep Learning, and GenAI
+
+Source: “Humans are a mix of AI” course slide by Stephane Maarek.
+
+The slide uses human behavior as an analogy:
+
+- **Artificial Intelligence (AI):** Sometimes we know “if this happens, then do that.”
+- **Machine Learning (ML):** Sometimes we have seen a lot of similar things before, and we classify them.
+- **Deep Learning:** Sometimes we have not seen something before, but we have “learned” a lot of similar concepts, so we can make a decision.
+- **Generative AI (GenAI):** Sometimes we get creative and, based on what we have learned, we can generate content.
+
+The diagram shows nested areas, from broadest to most specific:
+
+**Artificial Intelligence → Machine Learning → Deep Learning → Generative AI**
+
+Each area is shown inside the preceding one: Machine Learning within AI, Deep Learning within Machine Learning, and Generative AI within Deep Learning.
+
 ## ML Terms You May Encounter in the Exam
 
 Source: Ultimate AWS Certified AI Practitioner AIF-C01 course slide.
