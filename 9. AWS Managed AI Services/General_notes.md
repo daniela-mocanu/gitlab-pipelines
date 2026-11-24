@@ -68,3 +68,17 @@ The slide introduces EC2 alongside related services for storage, load balancing,
 | Store data on virtual drives | **Amazon Elastic Block Store (EBS)** |
 | Distribute load across machines | **Elastic Load Balancing (ELB)** |
 | Scale the number of instances | **EC2 Auto Scaling**, using an **Auto Scaling group (ASG)** |
+
+### EC2 Sizing & Configuration Options
+
+Source: “EC2 sizing & configuration options” course slide.
+
+| Option | What to configure |
+| --- | --- |
+| **Operating system (OS)** | Linux, Windows, or macOS, depending on the instance offering. |
+| **CPU** | Compute power and number of cores. |
+| **RAM** | Amount of random-access memory. |
+| **Storage** | Capacity and storage type: network-attached **EBS** or **Amazon Elastic File System (EFS)**, or local hardware storage through **EC2 Instance Store**. |
+| **Networking** | Network performance and public IP address configuration. |
+| **Firewall rules** | **Security groups** control allowed inbound and outbound traffic. |
+| **Bootstrap script** | **EC2 User Data** configures the instance at first launch. |
