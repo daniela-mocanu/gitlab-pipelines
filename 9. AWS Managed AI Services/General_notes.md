@@ -50,3 +50,21 @@ flowchart LR
     E[Document] --> D
     D --> F[Document tagged as Complaint]
 ```
+
+## 92. Amazon’s Hardware for AI
+
+### Amazon EC2
+
+Source: “Amazon EC2” course slide.
+
+- **EC2** stands for **Elastic Compute Cloud** and is an **Infrastructure as a Service (IaaS)** offering.
+- It is one of AWS’s most popular offerings. Understanding EC2 is fundamental to understanding how the cloud works.
+
+The slide introduces EC2 alongside related services for storage, load balancing, and scaling:
+
+| Capability | Service or resource |
+| --- | --- |
+| Rent virtual machines | **Amazon EC2** instances |
+| Store data on virtual drives | **Amazon Elastic Block Store (EBS)** |
+| Distribute load across machines | **Elastic Load Balancing (ELB)** |
+| Scale the number of instances | **EC2 Auto Scaling**, using an **Auto Scaling group (ASG)** |
