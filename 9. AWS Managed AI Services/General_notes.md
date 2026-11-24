@@ -82,3 +82,30 @@ Source: “EC2 sizing & configuration options” course slide.
 | **Networking** | Network performance and public IP address configuration. |
 | **Firewall rules** | **Security groups** control allowed inbound and outbound traffic. |
 | **Bootstrap script** | **EC2 User Data** configures the instance at first launch. |
+
+### AI Hardware: GPUs, Trainium, and Inferentia
+
+Source: “Amazon’s Hardware for AI” course slide.
+
+#### GPU-Based EC2 Instances
+
+- Examples shown: **P3, P4, P5**, and **G3 through G6** instance families.
+
+#### AWS Trainium
+
+- An ML chip designed for **deep learning training**, including models with **100 billion or more parameters**.
+- The slide gives a **Trn1** configuration with **16 Trainium accelerators** as an example; accelerator count depends on instance size.
+- The slide cites a **50% cost reduction** when training a model.
+
+#### AWS Inferentia
+
+- An ML chip designed to deliver **high-performance, low-cost inference**.
+- **Inf1** and **Inf2** instances are powered by AWS Inferentia.
+- The slide cites **up to 4× throughput** and **70% cost reduction**.
+
+#### Environmental Footprint and Comparison Figures
+
+- The slide describes **Trn** and **Inf** instances as having the **lowest environmental footprint**.
+- The slide does not specify the comparison baselines or conditions for its cost, throughput, or environmental claims; these figures should be read as slide claims rather than universal guarantees.
+
+**Key distinction:** **Trainium → training; Inferentia → inference.**
