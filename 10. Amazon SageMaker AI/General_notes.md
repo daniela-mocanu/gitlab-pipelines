@@ -1,5 +1,7 @@
 # Amazon SageMaker AI — General Notes
 
+Lectures 94–102.
+
 ## 95. Amazon SageMaker AI – Overview
 
 Amazon SageMaker AI is a **fully managed AWS service** that helps developers and data scientists **build, train, and deploy machine-learning models**. It brings much of the machine-learning workflow together in one platform.
