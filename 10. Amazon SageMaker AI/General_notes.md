@@ -250,6 +250,21 @@ Source: Both “SageMaker – Summary” course slides.
 | **Canvas** | No-code interface for SageMaker. |
 | **MLflow on SageMaker** | Run MLflow tracking servers on AWS to track runs and experiments. |
 
+## 102. SageMaker – Extra Features
+
+Source: “SageMaker – Extra Features” course slide.
+
+### Network Isolation Mode
+
+- Run SageMaker job containers without outbound network access.
+- Code inside the isolated container cannot directly access **Amazon S3**, either.
+- SageMaker can still handle configured input downloads and output uploads outside the isolated container using the job’s execution role.
+
+### SageMaker DeepAR Forecasting Algorithm
+
+- Used to forecast **time-series data**.
+- Uses a **Recurrent Neural Network (RNN)**.
+
 ## Additional Note: Amazon SageMaker AI – Governance and MLOps
 
 | Tool | Purpose |
