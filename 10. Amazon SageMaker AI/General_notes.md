@@ -226,6 +226,30 @@ Source: “MLFlow on Amazon SageMaker” course slide.
 | **Canvas** | Build ML workflows using a no-code visual interface. |
 | **MLflow tracking servers** | Track runs and experiments. |
 
+## 101. SageMaker – Summary
+
+Source: Both “SageMaker – Summary” course slides.
+
+| Service or feature | Remember its purpose |
+| --- | --- |
+| **SageMaker AI** | End-to-end machine-learning service. |
+| **Automatic Model Tuning** | Tune hyperparameters. |
+| **Deployment & Inference** | Real-time, serverless, batch, and asynchronous inference. |
+| **Studio** | Unified interface for SageMaker. |
+| **Data Wrangler** | Explore and prepare datasets; create features. |
+| **Feature Store** | Centrally store, manage, and share features and their metadata. |
+| **Clarify** | Compare models, explain model outputs, and detect bias. |
+| **Ground Truth** | Collect human feedback for model evaluation and RLHF datasets; label data. |
+| **Model Cards** | Document ML models. |
+| **Model Dashboard** | View models in one place. |
+| **Model Monitor** | Monitor models and configure alerts. |
+| **Model Registry** | Centralized repository for managing ML model versions. |
+| **Pipelines** | Automate ML workflows and support CI/CD for machine learning. |
+| **Role Manager** | Define access permissions. |
+| **JumpStart** | ML model hub and prebuilt ML solutions. |
+| **Canvas** | No-code interface for SageMaker. |
+| **MLflow on SageMaker** | Run MLflow tracking servers on AWS to track runs and experiments. |
+
 ## Additional Note: Amazon SageMaker AI – Governance and MLOps
 
 | Tool | Purpose |
