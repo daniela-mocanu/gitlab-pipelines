@@ -147,6 +147,42 @@ Source: “SageMaker Ground Truth” course slide.
 | **Ground Truth** | Label data. |
 | **A2I** | Add human review to predictions. |
 
+## 99. Amazon SageMaker – Governance
+
+### Model Governance
+
+- **Model Cards** document models, including their intended use, risks, and training details.
+- **Model Dashboard** provides a centralized view of models.
+- **Model Monitor** helps monitor models and set alerts.
+
+### Model Lifecycle and Workflows
+
+- **Model Registry** manages model versions and approval status.
+- **SageMaker Pipelines** supports automated machine-learning workflows and CI/CD.
+- A pipeline consists of **steps**, each performing a specific task, such as data preprocessing or model training.
+
+### Exam Focus: Supported Pipeline Step Types
+
+Source: “SageMaker Pipelines” course slide. The step types below follow the **slide’s order**:
+
+| Order on slide | Step type | Purpose |
+| --- | --- | --- |
+| 1 | **Processing** | Data processing, such as feature engineering. |
+| 2 | **Training** | Train a model. |
+| 3 | **Tuning** | Hyperparameter tuning, such as Hyperparameter Optimization (HPO). |
+| 4 | **AutoML** | Automatically train a model. |
+| 5 | **Model** | Create or register a SageMaker model. |
+| 6 | **ClarifyCheck** | Check drift against baselines for data bias, model bias, and model explainability. |
+| 7 | **QualityCheck** | Check drift against baselines for data quality and model quality. |
+
+**Remember the slide order:** Processing → Training → Tuning → AutoML → Model → ClarifyCheck → QualityCheck.
+
+**Execution order is defined by pipeline dependencies**, rather than a mandatory sequence of all these step types. A pipeline does not need to include every type.
+
+**Distinguish the checks:** ClarifyCheck focuses on **bias and explainability**; QualityCheck focuses on **data and model quality**.
+
+[AWS documentation: Pipeline step types](https://docs.aws.amazon.com/sagemaker/latest/dg/build-and-manage-steps.html#build-and-manage-steps-types).
+
 ## Additional Note: Amazon SageMaker AI – Governance and MLOps
 
 | Tool | Purpose |
