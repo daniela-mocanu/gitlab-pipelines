@@ -45,6 +45,21 @@ Source: “Responsible AI & Security” and “Governance & Compliance” course
 
 ## 105. Responsible AI
 
+### Overview and Key Principles
+
+Responsible AI means designing and using AI systems **ethically, safely, and transparently** so people can trust their outcomes. It applies throughout the **AI lifecycle**: design, development, deployment, monitoring, and evaluation.
+
+| Principle | Focus |
+| --- | --- |
+| **Fairness and bias mitigation** | Aim for equitable outcomes and check datasets and models for bias. |
+| **Inclusivity** | Make systems accessible and considerate of different users. |
+| **Robustness and safety** | Build systems that perform reliably and reduce potential harm. |
+| **Veracity** | Seek accurate, truthful outputs and address hallucinations. |
+| **Transparency and explainability** | Help people understand how AI systems work and why they produce results. |
+| **Sustainability** | Consider environmental impact when selecting and using models. |
+
+Responsible AI also involves managing risks such as **discriminatory outputs**, **intellectual-property concerns**, **inaccurate content**, and **loss of user trust**. Tools such as **Amazon Bedrock Guardrails** can help control model behavior and reduce undesirable outputs.
+
 Source: Seven course slides covering AWS services, core dimensions, AI Service Cards, interpretability trade-offs, decision trees, partial dependence plots, and human-centered design.
 
 ### Responsible AI – AWS Services
