@@ -183,6 +183,49 @@ Source: “SageMaker Pipelines” course slide. The step types below follow the 
 
 [AWS documentation: Pipeline step types](https://docs.aws.amazon.com/sagemaker/latest/dg/build-and-manage-steps.html#build-and-manage-steps-types).
 
+## 100. Amazon SageMaker – Consoles
+
+### Role Manager
+
+- Supports **access control** by helping define permissions for different organizational roles.
+
+### SageMaker JumpStart
+
+Source: “SageMaker JumpStart” course slide.
+
+- An **ML hub** for finding pretrained **foundation models**, **computer vision models**, and **natural language processing models**.
+- Includes models from providers such as **Hugging Face**, **Databricks**, **Meta**, and **Stability AI**. The slide’s catalog also shows **AI21 Labs**, **Cohere**, and **TensorFlow**.
+- Supports customizing models for your data and use case, subject to the model’s capabilities and license.
+- Deploy models directly on **SageMaker**, with control over deployment options.
+- Provides prebuilt ML solutions for **demand forecasting**, **credit rate prediction**, **fraud detection**, and **computer vision**.
+
+### SageMaker Canvas
+
+Source: “SageMaker Canvas” course slide.
+
+- Build ML models through a **visual interface**, with **no coding required**.
+- Access ready-to-use models from **Amazon Bedrock** or **SageMaker JumpStart**.
+- Build custom models using **AutoML**, powered by **SageMaker Autopilot**.
+- Available as part of **SageMaker Studio**.
+- Use **Data Wrangler** for data preparation.
+- The slide illustrates selecting **median_house_value** as a prediction target, then generating **batch** or **single predictions** in a house-value prediction workflow.
+
+### MLflow on Amazon SageMaker
+
+Source: “MLFlow on Amazon SageMaker” course slide.
+
+- **MLflow** is an **open-source tool** that helps ML teams manage the machine-learning lifecycle.
+- **MLflow tracking servers** track **runs and experiments**.
+- Launch tracking servers on SageMaker with a few clicks.
+- Integrated with **SageMaker** and available through **SageMaker Studio**.
+
+| Tool | Main purpose |
+| --- | --- |
+| **Role Manager** | Define access permissions. |
+| **JumpStart** | Find, customize, and deploy pretrained models and prebuilt solutions. |
+| **Canvas** | Build ML workflows using a no-code visual interface. |
+| **MLflow tracking servers** | Track runs and experiments. |
+
 ## Additional Note: Amazon SageMaker AI – Governance and MLOps
 
 | Tool | Purpose |
