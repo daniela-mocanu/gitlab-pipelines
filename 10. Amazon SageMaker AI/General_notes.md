@@ -54,6 +54,29 @@ SageMaker Feature Store provides a **centralized place to manage, share, and dis
 | **Data Wrangler** | Preparing data for machine learning. |
 | **Feature Store** | Managing and sharing machine-learning features. |
 
+## 98. Amazon SageMaker – Models and Humans
+
+### SageMaker Clarify
+
+- Helps assess **bias and fairness**.
+- Helps explain model predictions.
+- Evaluates foundation models on selected tasks; some evaluations can involve human reviewers.
+
+### SageMaker Ground Truth
+
+- Helps create **labeled datasets** by having people label data for machine learning.
+
+### Amazon Augmented AI (A2I)
+
+- Adds **human review of model predictions**, such as reviewing low-confidence results.
+- For this prediction-review use case, use A2I rather than Ground Truth.
+
+| Service | Main purpose |
+| --- | --- |
+| **Clarify** | Analyze and evaluate models. |
+| **Ground Truth** | Label data. |
+| **A2I** | Add human review to predictions. |
+
 ## Additional Note: Amazon SageMaker AI – Governance and MLOps
 
 | Tool | Purpose |
