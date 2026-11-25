@@ -29,3 +29,27 @@ Amazon SageMaker AI is a **fully managed AWS service** that helps developers and
 ### SageMaker Studio
 
 **SageMaker Studio** is an integrated environment for managing machine-learning workflows, collaboration, tuning, debugging, and deployment.
+
+## 97. Amazon SageMaker AI – Data Tools
+
+### SageMaker Data Wrangler
+
+SageMaker Data Wrangler helps prepare **tabular and image data** for machine learning. It supports:
+
+- Importing data from sources such as **Amazon S3**.
+- Exploring and visualizing datasets.
+- Checking data quality.
+- Applying transformations and feature engineering.
+
+### Feature Engineering
+
+**Feature engineering** turns raw data into useful model inputs. For example, a birth date can be transformed into a person’s **age**, which may be more useful for a prediction task.
+
+### SageMaker Feature Store
+
+SageMaker Feature Store provides a **centralized place to manage, share, and discover features** across datasets and teams. Features can be published from Data Wrangler to support collaboration and reuse.
+
+| Tool | Focus |
+| --- | --- |
+| **Data Wrangler** | Preparing data for machine learning. |
+| **Feature Store** | Managing and sharing machine-learning features. |
