@@ -100,6 +100,24 @@ Example questions:
 
 The slide’s SageMaker Studio example shows a feature-importance chart across a dataset, with features such as **MaturityMonths**, **LoanAmount**, and **Age**. This helps show which inputs influence the model’s predictions overall.
 
+#### Bias Detection
+
+Source: “SageMaker Clarify – Detect Bias (human)” course slide.
+
+- Detect and explain biases in **datasets and models**.
+- Measure bias using **statistical metrics**.
+- Specify the input features and groups to analyze; Clarify automatically computes the relevant bias metrics.
+
+The slide’s example analyzes the **ForeignWorker** feature and shows these results:
+
+| Metric | What it measures | Example value |
+| --- | --- | --- |
+| **Class Imbalance (CI)** | Differences in representation between groups in the dataset. | 0.92 |
+| **Difference in Positive Proportions in Labels (DPL)** | Differences between groups in the proportion of favorable labels in the training data. | −0.21 |
+| **Kullback–Leibler Divergence (KL)** | How much the groups’ label distributions differ; zero indicates identical distributions. | 0.18 |
+
+These are example values from the slide. Interpretation depends on the selected groups, labels, and context; a metric alone does not establish whether a model is fair.
+
 ### SageMaker Ground Truth
 
 - Helps create **labeled datasets** by having people label data for machine learning.
