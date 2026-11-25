@@ -53,3 +53,15 @@ SageMaker Feature Store provides a **centralized place to manage, share, and dis
 | --- | --- |
 | **Data Wrangler** | Preparing data for machine learning. |
 | **Feature Store** | Managing and sharing machine-learning features. |
+
+## Additional Note: Amazon SageMaker AI – Governance and MLOps
+
+| Tool | Purpose |
+| --- | --- |
+| **Model Cards** | Document key model information, such as intended use, risks, and training details. |
+| **Model Dashboard** | Provide a central view of models, including model and data quality, risk ratings, and monitoring alerts. |
+| **Role Manager** | Help define permissions for different roles in an organization. |
+| **Model Registry** | Track and version models, including their approval status. |
+| **SageMaker Pipelines** | Automate machine-learning workflows, such as data processing, training, tuning, registration, and quality checks, supporting repeatable processes similar to CI/CD. |
+
+Together, these tools help teams govern models, monitor quality, manage approvals, and operationalize machine-learning workflows.
