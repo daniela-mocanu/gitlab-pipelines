@@ -83,6 +83,23 @@ The slide shows a text-summarization evaluation with two criteria:
 
 These percentages are the example results shown in the slide.
 
+#### Model Explainability
+
+Source: “SageMaker Clarify – Model Explainability” course slide.
+
+SageMaker Clarify provides tools to help explain **how machine-learning models make predictions**.
+
+- **Before deployment:** Understand the model’s characteristics as a whole.
+- **After deployment:** Debug predictions provided by the model.
+- Help increase trust in and understanding of the model.
+
+Example questions:
+
+- “Why did the model predict a negative outcome such as a loan rejection for a given applicant?”
+- “Why did the model make an incorrect prediction?”
+
+The slide’s SageMaker Studio example shows a feature-importance chart across a dataset, with features such as **MaturityMonths**, **LoanAmount**, and **Age**. This helps show which inputs influence the model’s predictions overall.
+
 ### SageMaker Ground Truth
 
 - Helps create **labeled datasets** by having people label data for machine learning.
