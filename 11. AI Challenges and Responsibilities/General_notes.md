@@ -4,6 +4,14 @@ Lectures 104–111, from **104. AI Challenges and Responsibilities – Overview*
 
 ## 104. AI Challenges and Responsibilities – Overview
 
+### Overview
+
+This lecture introduces responsible AI, security, governance, and compliance. As AI becomes more capable, it is important to define how it should be used so that systems remain ethical, responsible, and safe.
+
+**Exam focus:** Understand the purpose of these topics and the principles behind them, rather than memorizing detailed implementation steps.
+
+The lecture sets the stage for exploring challenges such as **bias**, **transparency**, **explainability**, **privacy**, and **accountability** in later material.
+
 Source: “Responsible AI & Security” and “Governance & Compliance” course slides.
 
 ### Responsible AI
