@@ -122,6 +122,20 @@ These are example values from the slide. Interpretation depends on the selected 
 
 - Helps create **labeled datasets** by having people label data for machine learning.
 
+#### Human Feedback and RLHF
+
+Source: “SageMaker Ground Truth” course slide.
+
+- Human feedback can support **model review, customization, and evaluation**, as well as **data generation and annotation**.
+- For **Reinforcement Learning from Human Feedback (RLHF)**, collect feedback that helps align models with human preferences. That feedback informs the reward function, commonly through a trained reward model.
+- Ground Truth supports collecting human feedback and labels; collecting this data is distinct from running the reinforcement-learning training itself.
+
+#### Reviewers and Labeling
+
+- Reviewer options shown include **Amazon Mechanical Turk workers**, **your employees**, and **third-party vendors**.
+- The diagram illustrates people creating labels such as **Ship**, **Dog**, and **Cat** for objects in an image.
+- **SageMaker Ground Truth Plus** provides a managed data-labeling service.
+
 ### Amazon Augmented AI (A2I)
 
 - Adds **human review of model predictions**, such as reviewing low-confidence results.
