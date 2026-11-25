@@ -62,6 +62,27 @@ SageMaker Feature Store provides a **centralized place to manage, share, and dis
 - Helps explain model predictions.
 - Evaluates foundation models on selected tasks; some evaluations can involve human reviewers.
 
+#### Foundation Model Evaluation
+
+Source: “SageMaker Clarify” course slide.
+
+- Evaluate and compare **foundation models**, including human factors such as **friendliness** or **humor**.
+- Use an **AWS-managed team** of reviewers or your **own employees**.
+- Use **built-in datasets** or bring your **own dataset**.
+- Provides **built-in metrics and algorithms**.
+- Available as part of **SageMaker Studio**.
+
+#### Example: Comparing Model A and Model B
+
+The slide shows a text-summarization evaluation with two criteria:
+
+| Criterion | What is evaluated | Evaluation and rating | Model A | Model B |
+| --- | --- | --- | --- | --- |
+| **Brand voice** | How well the response matches the company’s tone. | Pairwise comparison using choice buttons; reported as **preference rate**. | 25% | 75% |
+| **Relevance** | Whether the generated summary includes relevant knowledge or facts. | Individual evaluation using thumbs up/down; reported as **approval rate**. | 64% | 93% |
+
+These percentages are the example results shown in the slide.
+
 ### SageMaker Ground Truth
 
 - Helps create **labeled datasets** by having people label data for machine learning.
