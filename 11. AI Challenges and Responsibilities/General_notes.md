@@ -565,3 +565,24 @@ The diagram shows three repositories supporting the workflow across its stages:
 | **Model Repository** | Model artifacts and versions. |
 
 **Exam reminder:** Remember both sequences—the **four pipelines** and the **six workflow stages**—and the supporting **data, code, and model repositories**.
+
+## Chapter 11 — Test Examples
+
+### Question 2: Interpretable Credit-Risk Decisions
+
+Source: Quiz screenshot; related lecture: **105. Responsible AI**.
+
+A bank must be able to show regulators exactly how its credit-risk model reached each decision, step by step, even if this reduces prediction performance. Which type of model best fits this requirement?
+
+**Options:**
+
+- A deep neural network with many layers.
+- A large language model on Amazon Bedrock.
+- A decision tree.
+- An ensemble of several neural networks.
+
+**Correct answer: A decision tree.**
+
+Decision trees split data using simple, human-readable rules. A prediction can be traced through its decision path, providing the **high interpretability** required in this scenario. Deep neural networks and neural-network ensembles are generally harder to inspect step by step.
+
+**Exam cue:** When the requirement emphasizes showing **exactly how a decision was reached**, prioritize **interpretability**. The question allows a potential performance trade-off; decision trees do not inherently perform worse on every task.
