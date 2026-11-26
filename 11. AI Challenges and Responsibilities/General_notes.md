@@ -311,3 +311,67 @@ AWS compliance coverage does not automatically make a customer’s AI applicatio
 - **SageMaker Model Cards** centralize documentation of your ML models.
 - Support **audit activities** by making relevant model information available for review.
 - The slide also references **AWS AI Service Cards**. These document AWS services’ intended uses, limitations, and responsible AI considerations; they are related documentation, distinct from SageMaker Model Cards for individual models.
+
+## 108. Governance for AI
+
+Source: Course slides on the importance of governance and compliance, a governance framework, governance strategies, and data management concepts.
+
+### Importance of Governance and Compliance
+
+- Manage, optimize, and scale organizational AI initiatives.
+- Build trust through responsible and trustworthy AI practices.
+- Mitigate risks such as **bias**, **privacy violations**, and **unintended consequences**.
+- Establish clear **policies, guidelines, and oversight mechanisms** so AI systems align with legal and regulatory requirements.
+- Protect against legal and reputational risks.
+- Build public confidence in the responsible deployment of AI.
+
+### Governance Framework: Example Approach
+
+1. **Establish an AI Governance Board or Committee.** Include representatives from legal, compliance, data privacy, and subject matter experts (SMEs) in AI development.
+2. **Define roles and responsibilities.** Cover oversight, policy-making, risk assessment, and decision-making processes.
+3. **Implement policies and procedures.** Address the entire AI lifecycle, from data management through model deployment and monitoring.
+
+### Governance Strategies
+
+#### Policies
+
+- Define principles, guidelines, and responsible AI considerations.
+- Cover **data management**, **model training**, **output validation**, **safety**, and **human oversight**.
+- Address **intellectual property**, **bias mitigation**, and **privacy protection**.
+
+#### Review Cadence
+
+- Combine **technical**, **legal**, and **responsible AI** reviews.
+- Set a clear schedule, such as monthly, quarterly, or annually.
+- Include **SMEs**, **legal and compliance teams**, and **end-users**.
+
+#### Review Strategies
+
+- **Technical reviews:** Assess model performance, data quality, and algorithm robustness.
+- **Non-technical reviews:** Assess policies, responsible AI principles, and regulatory requirements.
+- Test and validate outputs before deploying a new model.
+- Use clear decision-making frameworks to act on review results.
+
+#### Transparency Standards
+
+- Publish information about AI models, training data, and key decisions made.
+- Document AI solutions’ **limitations**, **capabilities**, and **use cases**.
+- Provide channels for end-users and stakeholders to offer feedback and raise concerns.
+
+#### Team Training Requirements
+
+- Train teams on relevant policies, guidelines, and best practices.
+- Include bias mitigation and responsible AI practices.
+- Encourage cross-functional collaboration and knowledge-sharing.
+- Implement a training and certification program.
+
+### Data Management Concepts
+
+| Concept | Focus |
+| --- | --- |
+| **Data lifecycle** | Collection → processing → storage → consumption → archival. |
+| **Data logging** | Track inputs, outputs, performance metrics, and system events. |
+| **Data residency** | Where data is processed and stored, considering regulations, privacy requirements, and proximity between compute and data. |
+| **Data monitoring** | Assess data quality and identify anomalies and data drift. |
+| **Data analysis** | Statistical analysis, visualization, and exploration. |
+| **Data retention** | Decide how long to keep data, considering regulatory requirements, historical training data needs, and cost. |
