@@ -523,3 +523,45 @@ Classify the **usage pattern**, rather than the service name alone. For example,
 - **Resilience**.
 
 Lower ownership does not remove the organization’s responsibility to manage its data, access, and use of AI. As ownership increases, the organization takes on more of the application and model lifecycle.
+
+## 111. MLOps
+
+Source: “MLOps Example” course slide.
+
+### Pipeline Overview
+
+The diagram groups the machine-learning workflow into four connected pipelines:
+
+**Data Pipeline → Building and Testing Pipeline → Deployment Pipeline → Monitoring Pipeline.**
+
+### Workflow Stages
+
+The detailed stages appear in this order:
+
+1. **Data Preparation**
+2. **Model Build**
+3. **Model Evaluation**
+4. **Model Selection**
+5. **Deployment**
+6. **Monitoring**
+
+```mermaid
+flowchart LR
+    A[Data Preparation] --> B[Model Build]
+    B --> C[Model Evaluation]
+    C --> D[Model Selection]
+    D --> E[Deployment]
+    E --> F[Monitoring]
+```
+
+### Supporting Repositories
+
+The diagram shows three repositories supporting the workflow across its stages:
+
+| Repository | What it manages |
+| --- | --- |
+| **Data Repository** | Datasets used by the ML workflow. |
+| **Code Repository** | Code for preparing data, building, evaluating, deploying, and monitoring models. |
+| **Model Repository** | Model artifacts and versions. |
+
+**Exam reminder:** Remember both sequences—the **four pipelines** and the **six workflow stages**—and the supporting **data, code, and model repositories**.
