@@ -257,3 +257,57 @@ LLMs generate text through next-token prediction rather than guaranteed factual 
 | **Exposure** | Sensitive information is placed at risk of disclosure. |
 | **Prompt leaking** | Prompts or internal input content are disclosed. |
 | **Jailbreaking** | Attempts to bypass safety constraints. |
+
+## 107. Compliance for AI
+
+Source: “AI Standard Compliance Challenges,” “AWS Compliance,” and “Model Cards” course slides.
+
+### AI Standard Compliance Challenges
+
+| Challenge | Why it matters |
+| --- | --- |
+| **Complexity and opacity** | It can be difficult to audit how AI systems make decisions. |
+| **Dynamism and adaptability** | AI systems can change over time through updates, retraining, or changes in their operating context. |
+| **Emergent capabilities** | Systems may exhibit unintended or previously unrecognized capabilities. |
+| **Unique risks** | Algorithmic bias, privacy violations, and misinformation complicate compliance. |
+| **Algorithm accountability** | Transparency and explainability support scrutiny of decisions and responsibility for outcomes. |
+
+#### Algorithmic and Human Bias
+
+- **Algorithmic bias:** Biased or unrepresentative data can cause a model to perpetuate bias.
+- **Human bias:** People who create an AI system can introduce bias through their choices.
+- The slide uses an AI-generated picture of doctors to illustrate concerns about representation in generated outputs.
+
+#### Regulations and Accountability
+
+- The lecture references the **EU Artificial Intelligence Act** and AI regulations in several **US states and cities**.
+- These measures seek to promote **fairness, non-discrimination, and human rights**.
+- Specific obligations depend on the applicable law, jurisdiction, system, and use case.
+
+### AWS Compliance
+
+The slide states that AWS supports **over 140 security standards and compliance certifications**. This is the course slide’s figure, rather than a current verified count.
+
+The slide lists the following organizations, frameworks, standards, and laws; they are not all certifications:
+
+| Name | What it refers to |
+| --- | --- |
+| **NIST** | National Institute of Standards and Technology; develops standards and frameworks. |
+| **ENISA** | European Union Agency for Cybersecurity. |
+| **ISO** | International Organization for Standardization; develops international standards. |
+| **SOC** | System and Organization Controls reports on service organizations’ controls. |
+| **HIPAA** | Health Insurance Portability and Accountability Act; US health-information requirements. |
+| **GDPR** | General Data Protection Regulation; EU personal-data protection law. |
+| **PCI DSS** | Payment Card Industry Data Security Standard. |
+
+AWS compliance coverage does not automatically make a customer’s AI application compliant; the customer’s implementation and responsibilities also matter.
+
+### Model Cards
+
+- A **standardized format** for documenting key details about an ML model.
+- For generative AI, can include **source citations** and **data-origin documentation**.
+- Document datasets, their sources and licenses, and known biases or quality issues in training data.
+- Include **intended use**, **risk rating**, **training details**, and **metrics**.
+- **SageMaker Model Cards** centralize documentation of your ML models.
+- Support **audit activities** by making relevant model information available for review.
+- The slide also references **AWS AI Service Cards**. These document AWS services’ intended uses, limitations, and responsible AI considerations; they are related documentation, distinct from SageMaker Model Cards for individual models.
