@@ -586,3 +586,22 @@ A bank must be able to show regulators exactly how its credit-risk model reached
 Decision trees split data using simple, human-readable rules. A prediction can be traced through its decision path, providing the **high interpretability** required in this scenario. Deep neural networks and neural-network ensembles are generally harder to inspect step by step.
 
 **Exam cue:** When the requirement emphasizes showing **exactly how a decision was reached**, prioritize **interpretability**. The question allows a potential performance trade-off; decision trees do not inherently perform worse on every task.
+
+### Question 7: Fine-Tuning and Security Scope
+
+Source: Quiz screenshot; related lecture: **110. GenAI Security Scoping Matrix**.
+
+A company fine-tunes an Amazon Bedrock foundation model with its own proprietary data to build an internal application. Which scope of the Generative AI Security Scoping Matrix does this correspond to?
+
+**Options:**
+
+- Consumer app.
+- Pre-trained models.
+- Fine-tuned models.
+- Self-trained models.
+
+**Correct answer: Fine-tuned models — Scope 4.**
+
+Fine-tuning an existing model with your own data, such as a Bedrock custom model or a customized model through SageMaker JumpStart, corresponds to **Scope 4**, with higher ownership and security responsibility than using a pretrained model unchanged.
+
+**Exam cue:** **Existing model + fine-tuning on proprietary data → Scope 4.** Using the model unchanged is **Scope 3**; training a model from scratch is **Scope 5**.
