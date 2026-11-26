@@ -157,3 +157,103 @@ Design AI systems with **human needs as a priority**.
 - **Cognitive apprenticeship:** AI systems learn from human instructors and experts.
 - **Personalization:** Meet the specific needs and preferences of a human learner.
 - **User-centered design:** Make systems accessible to a wide range of users.
+
+## 106. GenAI Challenges
+
+Source: Seven course slides on generative AI capabilities and challenges, toxicity, hallucinations, plagiarism and cheating, and prompt misuses.
+
+### Capabilities of Generative AI
+
+- Adaptability.
+- Responsiveness.
+- Simplicity.
+- Creativity and exploration.
+- Data efficiency.
+- Personalization.
+- Scalability.
+
+### Challenges of Generative AI
+
+- Regulatory violations.
+- Social risks.
+- Data security and privacy concerns.
+- Toxicity.
+- Hallucinations.
+- Interpretability.
+- Nondeterminism.
+- Plagiarism and cheating.
+
+### Toxicity
+
+**Toxicity** is the generation of content that is offensive, disturbing, or inappropriate.
+
+- Defining toxicity can be difficult and context-dependent.
+- There is a boundary to consider between restricting toxic content and censorship.
+- Quotations of offensive material raise questions about when such content is appropriate to include.
+- The slide illustrates a request to express strong disagreement producing a personal insult instead of respectful disagreement.
+
+**Mitigation:**
+
+- Curate training data by identifying and removing offensive phrases in advance, while considering context.
+- Use guardrail models to detect and filter unwanted content.
+
+### Hallucinations
+
+**Hallucinations** are assertions or claims that sound true but are incorrect, including plausible descriptions of content that does not exist.
+
+LLMs generate text through next-token prediction rather than guaranteed factual verification. The slide links hallucinations to probability sampling; however, hallucinations can also occur with deterministic decoding, so sampling is not their sole cause.
+
+**Mitigation:**
+
+- Educate users that model-generated content must be checked.
+- Verify content against independent sources.
+- Mark unverified generated content so users know verification is necessary.
+
+### Plagiarism and Cheating
+
+- GenAI can be misused for college essays, writing samples for job applications, and other forms of cheating or illicit copying.
+- Debate continues about when these technologies should be accepted or restricted.
+- Tracing the source of a specific LLM output can be difficult.
+- Technologies attempt to detect AI-generated text or images; their results are not definitive proof of authorship.
+
+### Prompt Misuses and Related Threats
+
+#### Poisoning
+
+- Intentionally introduce malicious or biased data into a model’s **training dataset**.
+- This can lead to biased, offensive, or harmful outputs.
+- Although grouped under “Prompt Misuses” in the slide, training-data poisoning targets the training data rather than an inference-time prompt.
+
+#### Hijacking and Prompt Injection
+
+- Embed instructions in prompts or other model inputs to redirect model behavior toward an attacker’s intentions.
+- Potential outcomes include misinformation or attempts to trigger harmful actions in connected systems.
+- Model-generated text does not execute code by itself; execution requires access to tools or an application that runs it.
+
+#### Exposure
+
+- Sensitive or confidential information supplied during **training or inference** may be exposed through model outputs or surrounding systems.
+- A model may reproduce memorized training information or reveal sensitive information present in its current context, creating data-leak or privacy risks.
+- Supplying information during inference does not itself mean that the model is retrained on it.
+
+#### Prompt Leaking
+
+- Disclosure of prompts or inputs used by a model, whether accidental or deliberately induced.
+- Can expose protected information, internal instructions, or details about the application’s configuration.
+
+#### Jailbreaking
+
+- Attempt to circumvent a model’s ethical or safety constraints, such as restrictions on offensive content or sensitive information.
+- Aims to obtain outputs or functionality that the safeguards are intended to restrict.
+
+### Exam Distinctions
+
+| Term | Key distinction |
+| --- | --- |
+| **Toxicity** | Offensive, disturbing, or inappropriate content. |
+| **Hallucination** | Plausible but incorrect or fabricated content. |
+| **Poisoning** | Malicious modification of training data. |
+| **Prompt injection / hijacking** | Instructions in inputs redirect model or application behavior. |
+| **Exposure** | Sensitive information is placed at risk of disclosure. |
+| **Prompt leaking** | Prompts or internal input content are disclosed. |
+| **Jailbreaking** | Attempts to bypass safety constraints. |
