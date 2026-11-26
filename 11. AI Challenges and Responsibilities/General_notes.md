@@ -493,3 +493,33 @@ The definitions below correct the slide’s shorthand for accuracy and F1. For b
 - Maintain a robust **backup and recovery strategy**.
 - Preserve **data lineage** and **audit trails**.
 - Monitor and test integrity controls to ensure they are effective.
+
+## 110. GenAI Security Scoping Matrix
+
+Source: “Generative AI Security Scoping Matrix” course slide.
+
+The matrix is a **framework for identifying and managing security risks** associated with deploying generative AI applications. It classifies applications into **five scopes**, moving from **low to high ownership**.
+
+### The Five Scopes
+
+| Scope | Category | What you do | Examples from the slide |
+| --- | --- | --- | --- |
+| **1** | **Consumer App** | Use public GenAI services. | ChatGPT, Midjourney. |
+| **2** | **Enterprise App** | Use an application or SaaS product with GenAI features. | Salesforce Einstein GPT, Amazon Q Developer. |
+| **3** | **Pre-trained Models** | Build your application on a versioned model. | Amazon Bedrock base models. |
+| **4** | **Fine-tuned Models** | Fine-tune a model on your data. | Amazon Bedrock customized models, SageMaker JumpStart. |
+| **5** | **Self-trained Models** | Train a model from scratch on your data. | SageMaker. |
+
+**Exam order:** Consumer App → Enterprise App → Pre-trained Models → Fine-tuned Models → Self-trained Models.
+
+Classify the **usage pattern**, rather than the service name alone. For example, a JumpStart model used without fine-tuning fits the pretrained-model pattern; the slide’s Scope 4 example concerns customization.
+
+### Security Concerns Across All Scopes
+
+- **Governance and compliance**.
+- **Legal and privacy**.
+- **Risk management**.
+- **Controls**.
+- **Resilience**.
+
+Lower ownership does not remove the organization’s responsibility to manage its data, access, and use of AI. As ownership increases, the organization takes on more of the application and model lifecycle.
