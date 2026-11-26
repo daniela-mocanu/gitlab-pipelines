@@ -390,3 +390,106 @@ Source: Course slides on the importance of governance and compliance, a governan
 | **Data monitoring** | Assess data quality and identify anomalies and data drift. |
 | **Data analysis** | Statistical analysis, visualization, and exploration. |
 | **Data retention** | Decide how long to keep data, considering regulatory requirements, historical training data needs, and cost. |
+
+## 109. Security and Privacy for AI
+
+Source: Seven course slides on AI system security and privacy, monitoring, the AWS Shared Responsibility Model, and secure data engineering.
+
+### Threat Detection
+
+- Threat examples include **fake content**, **manipulated data**, and **automated attacks**.
+- Deploy AI-based threat detection systems.
+- Analyze **network traffic**, **user behavior**, and other relevant data sources.
+
+### Vulnerability Management
+
+- Identify vulnerabilities such as **software bugs** and **model weaknesses**.
+- Conduct security assessments, authorized penetration testing, and code reviews.
+- Maintain patch management and update processes.
+
+### Infrastructure Protection
+
+- Secure cloud platforms, edge devices, and data stores.
+- Use **access controls**, **network segmentation**, and **encryption**.
+- Design systems to withstand failures.
+
+### Prompt Injection
+
+- Manipulated inputs can redirect model behavior toward malicious or undesirable outputs.
+- The slide recommends guardrails such as **prompt filtering**, **sanitization**, and **validation**.
+- These measures reduce risk but do not guarantee prevention; maintain authorization checks and restricted tool permissions outside the model as well.
+
+### Data Encryption
+
+- Encrypt data **at rest** and **in transit**.
+- Manage encryption keys properly and protect them against unauthorized access.
+
+### Monitoring AI Systems
+
+#### Performance Metrics
+
+The definitions below correct the slide’s shorthand for accuracy and F1. For binary classification, TP = true positives, TN = true negatives, FP = false positives, and FN = false negatives.
+
+| Metric | Meaning or formula |
+| --- | --- |
+| **Accuracy** | Proportion of all predictions that are correct: **(TP + TN) / (TP + TN + FP + FN)**. It is not the proportion of positive predictions. |
+| **Precision** | Proportion of predicted positives that are actually positive: **TP / (TP + FP)**. |
+| **Recall** | Proportion of actual positives correctly identified: **TP / (TP + FN)**. |
+| **F1-score** | **Harmonic mean** of precision and recall: **2 × precision × recall / (precision + recall)**. |
+| **Latency** | Time taken by the model to make a prediction. |
+
+#### Infrastructure and Responsible AI Monitoring
+
+- Monitor **CPU and GPU usage**, **network performance**, **storage**, and **system logs** to detect bottlenecks and failures.
+- Monitor **bias and fairness**, **compliance**, and **responsible AI** considerations.
+
+### AWS Shared Responsibility Model
+
+**Exam distinction: AWS secures “of” the cloud; customers secure “in” the cloud.** The precise division depends on the service being used.
+
+| Responsibility | Scope and examples |
+| --- | --- |
+| **AWS: Security of the cloud** | Protect the hardware, software, facilities, and networking that run AWS services, including managed services such as Bedrock, SageMaker, and S3. |
+| **Customer: Security in the cloud** | Manage customer data, applications, identities, access controls, and security configuration. For Bedrock, examples include data management, access permissions, and configuring guardrails. Protect application data through appropriate encryption. |
+| **Shared controls** | Patch management, configuration management, and awareness and training: AWS and customers each handle their respective layers and responsibilities. |
+
+#### Layers Shown in the Diagram
+
+- **Customer layer:** Customer data; platform and applications; identity and access management; applicable operating-system, network, and firewall configuration; client-side data encryption and integrity authentication; server-side encryption configuration; and network traffic protection.
+- **AWS layer:** Underlying service software; compute, storage, database, and networking infrastructure; physical hardware and global infrastructure, including **Regions**, **Availability Zones**, and **edge locations**.
+- The diagram is a general model. With managed services, AWS operates more of the stack; customers do not manage every operating-system or infrastructure layer shown.
+
+[AWS Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/).
+
+### Secure Data Engineering – Best Practices
+
+#### Assessing Data Quality
+
+| Dimension or practice | Focus |
+| --- | --- |
+| **Completeness** | Cover a diverse and comprehensive range of scenarios. |
+| **Accuracy** | Ensure data is accurate, up to date, and representative. |
+| **Timeliness** | Assess the age of stored data and whether it remains suitable for the task. |
+| **Consistency** | Maintain coherence and consistency throughout the data lifecycle. |
+| **Data profiling and monitoring** | Examine data characteristics and track quality over time. |
+| **Data lineage** | Track data origins and transformations. |
+
+#### Privacy-Enhancing Technologies
+
+- Use **data masking** and **obfuscation** to reduce the risk of sensitive-data exposure.
+- Use **encryption** and **tokenization** to protect data as appropriate during processing and usage. Here, tokenization replaces sensitive values with substitutes; it is distinct from splitting text into LLM tokens.
+
+#### Data Access Control
+
+- Establish a comprehensive data governance framework with clear policies.
+- Use **role-based access control** and **fine-grained permissions**.
+- Use **single sign-on (SSO)**, **multi-factor authentication (MFA)**, and **identity and access management (IAM)** solutions.
+- Monitor and log data access activities.
+- Regularly review and update access rights according to **least privilege**.
+
+#### Data Integrity
+
+- Keep data complete, consistent, and free from errors and inconsistencies.
+- Maintain a robust **backup and recovery strategy**.
+- Preserve **data lineage** and **audit trails**.
+- Monitor and test integrity controls to ensure they are effective.
