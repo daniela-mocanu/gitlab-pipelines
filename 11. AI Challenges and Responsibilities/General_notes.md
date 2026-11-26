@@ -314,6 +314,21 @@ AWS compliance coverage does not automatically make a customer’s AI applicatio
 
 ## 108. Governance for AI
 
+### Definition and Exam Focus
+
+**AI governance** is the set of policies, guidelines, and oversight processes that help an organization manage AI responsibly and consistently.
+
+| Goal | Meaning |
+| --- | --- |
+| **Managing risk** | Identify and reduce potential harms or operational risks. |
+| **Creating business value** | Ensure AI use supports organizational objectives. |
+| **Meeting legal and regulatory requirements** | Set expectations for how AI systems are designed and used. |
+| **Building trust** | Make responsibilities and oversight clear to users and stakeholders. |
+
+Governance is related to, but distinct from, **responsible AI**, **security**, and **compliance**. Responsible AI focuses on trustworthy and transparent outcomes throughout the AI lifecycle. Security protects **confidentiality, integrity, and availability**. Compliance focuses on following applicable regulations and guidelines.
+
+**Exam reminder:** Governance provides the **policies and oversight** that guide AI use, manage risk, and align systems with business and regulatory expectations.
+
 Source: Course slides on the importance of governance and compliance, a governance framework, governance strategies, and data management concepts.
 
 ### Importance of Governance and Compliance
